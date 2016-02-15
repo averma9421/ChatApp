@@ -1,0 +1,32 @@
+<head>
+  <title>Meteor chat!!</title>
+</head>
+
+<body>
+<div id="topBorder">
+  {{> loginButtons}} <!-- Display the login button -->
+</div>
+ <center> <h1> <u> Welcome to Meteor Chat!! </u> </h1> </center>
+<br> <br>
+  {{> hello}}
+  
+</body>
+
+<template name="hello">
+
+
+  <br/><br/>
+  <form class="chat-form">
+    <textarea name="message" rows=5 cols=40 ></textarea> <!-- textare -->
+    <br/> <br/>
+    <input type="submit" value="Submit message" />  <!-- submit button -->
+  </form>
+
+  {{#each messages}}
+    <p id="msg">{{username}}: {{text}}</p>    <!-- Display user id along with their messages -->
+  {{/each}}
+
+  {{#unless currentUser}}    <!-- if no user is logged in display this message -->
+    <p>Please log in to post and view messages</p>   
+  {{/unless}}
+</template>

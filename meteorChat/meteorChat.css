@@ -1,0 +1,22 @@
+
+#topBorder{
+	
+	background-color:#AB1E23;
+	width: 1500px;
+	height:35px;
+	margin-top:0px;
+	position:relative;
+	margin-left:0px;
+	padding-left:20px;
+	padding-top:20px;
+}
+body{
+	color:white;
+	background-color:#6E1517;
+}
+
+#msg{
+	width: 500px;
+	background-color:#AB1E23;
+	height:20px;
+}
